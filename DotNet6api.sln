@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet6api", "DotNet6api\DotNet6api.csproj", "{A06948A2-3CC4-4626-83F6-0505D59A44A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNet6api", "DotNet6api\DotNet6api.csproj", "{A06948A2-3CC4-4626-83F6-0505D59A44A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleClient", "ConsoleClient\ConsoleClient.csproj", "{AC231B6A-673F-4D55-A2CB-2636C5DB86C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{A06948A2-3CC4-4626-83F6-0505D59A44A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A06948A2-3CC4-4626-83F6-0505D59A44A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A06948A2-3CC4-4626-83F6-0505D59A44A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC231B6A-673F-4D55-A2CB-2636C5DB86C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC231B6A-673F-4D55-A2CB-2636C5DB86C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC231B6A-673F-4D55-A2CB-2636C5DB86C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC231B6A-673F-4D55-A2CB-2636C5DB86C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
