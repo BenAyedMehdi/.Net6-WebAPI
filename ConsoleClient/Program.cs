@@ -16,7 +16,7 @@ if (response.IsSuccessStatusCode)
     var items = await response.Content.ReadFromJsonAsync<IEnumerable<ItemDto>>();
 	foreach (var item in items)
 	{
-		Console.WriteLine(item.Id);
+		Console.WriteLine(item);
 	}
 }
 else

@@ -32,7 +32,7 @@ namespace DotNet6api.Controllers
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> Get(int id)
         {
-            var item = Context.Items.SingleOrDefault(x => x.Id == id);
+            var item = Context.Items.SingleOrDefault(x => x.ItemId == id);
             if (item == null)
             {
                 return NotFound();
@@ -47,7 +47,7 @@ namespace DotNet6api.Controllers
         {
             await Context.Items.AddAsync(item);
             await Context.SaveChangesAsync();
-            return CreatedAtAction(nameof(Get), new { id = item.Id}, item);
+            return CreatedAtAction(nameof(Get), new { id = item.ItemId}, item);
         }
 
         // PUT api/<ItemsController>/5
@@ -56,7 +56,7 @@ namespace DotNet6api.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> Put(int id,Item item)
         {
-            if (id != item.Id) return BadRequest();
+            if (id != item.ItemId) return BadRequest();
             
             Context.Entry(item).State = EntityState.Modified;
             await Context.SaveChangesAsync();
